@@ -1,0 +1,15 @@
+.DS_Store
+development.sqlite3
+production.sqlite3
+test.sqlite3
+log
+database.yml
+*.tmproj
+media/
+config/database.yml
+tmp/
+.rvmrc
+config/setup_load_paths.rb
+setup_load_paths.rb
+xcuserdata/
+.sass-cache/

@@ -1,0 +1,23 @@
+# General aliases
+alias ls='ls -G'
+alias pwdc="pwd | tr -d '\n' | pbcopy"
+alias u='cd ..'
+alias uu='cd ../..'
+alias uuu='cd ../../..'
+alias uuuu='cd ../../../..'
+alias myip='curl -s http://checkip.dyndns.org/ | grep -o "[[:digit:].]\+"'
+
+# Rails aliases
+alias lm='$EDITOR db/migrate/`ls -t db/migrate/ | head -1`'
+alias llm='ls db/migrate | tail'
+
+# git aliases
+alias gl='git l'
+alias gst='git status'
+alias changelog='git --no-pager log --format="%s"'
+
+# Other aliases
+alias perl="/usr/bin/perl"
+alias cpan="/usr/bin/cpan"
+
+function _hgrep() { history | grep "$@" | tail -n 10;}; alias hgrep='_hgrep'
