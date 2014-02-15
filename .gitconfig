@@ -1,6 +1,9 @@
 [core]
   excludesfile = ~/.gitignore
 
+[log]
+  abbrevCommit = true
+
 [color]
   pager = true
   ui = auto
