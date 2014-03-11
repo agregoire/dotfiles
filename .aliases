@@ -26,3 +26,8 @@ function serve {
   port="${1:-3000}"
   ruby -r webrick -e "s = WEBrick::HTTPServer.new(:Port => $port, :DocumentRoot => Dir.pwd); trap('INT') { s.shutdown }; s.start"
 }
+
+# Users https://github.com/alloy/terminal-notifier
+# Call like that:
+#     long_running_task.sh && notify "Done"
+function _notify() { terminal-notifier -message "$@";}; alias notify='_notify'
